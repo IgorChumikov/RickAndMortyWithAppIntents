@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		AC3636CD2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636CC2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift */; };
-		AC3636CF2AFBA68900A0A19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636CE2AFBA68900A0A19C /* ContentView.swift */; };
 		AC3636D12AFBA68A00A0A19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3636D02AFBA68A00A0A19C /* Assets.xcassets */; };
 		AC3636D42AFBA68A00A0A19C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3636D32AFBA68A00A0A19C /* Preview Assets.xcassets */; };
+		AC3636DD2AFBA70400A0A19C /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636DC2AFBA70400A0A19C /* CharacterResponse.swift */; };
+		AC3636DF2AFBA71800A0A19C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636DE2AFBA71800A0A19C /* Character.swift */; };
+		AC3636E12AFBA72E00A0A19C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E02AFBA72E00A0A19C /* Location.swift */; };
+		AC3636E42AFBA77000A0A19C /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */; };
+		AC3636E72AFBA79400A0A19C /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E62AFBA79400A0A19C /* CharacterListView.swift */; };
+		AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E92AFBA7B800A0A19C /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC3636C92AFBA68900A0A19C /* RickAndMortyWithAppIntents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWithAppIntents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3636CC2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWithAppIntentsApp.swift; sourceTree = "<group>"; };
-		AC3636CE2AFBA68900A0A19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC3636D02AFBA68A00A0A19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3636D32AFBA68A00A0A19C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC3636DC2AFBA70400A0A19C /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		AC3636DE2AFBA71800A0A19C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AC3636E02AFBA72E00A0A19C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		AC3636E62AFBA79400A0A19C /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		AC3636E92AFBA7B800A0A19C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		AC3636CB2AFBA68900A0A19C /* RickAndMortyWithAppIntents */ = {
 			isa = PBXGroup;
 			children = (
+				AC3636E82AFBA7AF00A0A19C /* Service */,
+				AC3636DA2AFBA6F000A0A19C /* CharacterList */,
 				AC3636CC2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift */,
-				AC3636CE2AFBA68900A0A19C /* ContentView.swift */,
 				AC3636D02AFBA68A00A0A19C /* Assets.xcassets */,
 				AC3636D22AFBA68A00A0A19C /* Preview Content */,
 			);
@@ -65,6 +76,50 @@
 				AC3636D32AFBA68A00A0A19C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC3636DA2AFBA6F000A0A19C /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				AC3636E52AFBA78300A0A19C /* Views */,
+				AC3636E22AFBA74600A0A19C /* ViewModels */,
+				AC3636DB2AFBA6FA00A0A19C /* Models */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		AC3636DB2AFBA6FA00A0A19C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC3636DC2AFBA70400A0A19C /* CharacterResponse.swift */,
+				AC3636DE2AFBA71800A0A19C /* Character.swift */,
+				AC3636E02AFBA72E00A0A19C /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC3636E22AFBA74600A0A19C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AC3636E52AFBA78300A0A19C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC3636E62AFBA79400A0A19C /* CharacterListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC3636E82AFBA7AF00A0A19C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC3636E92AFBA7B800A0A19C /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3636CF2AFBA68900A0A19C /* ContentView.swift in Sources */,
+				AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */,
 				AC3636CD2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift in Sources */,
+				AC3636E12AFBA72E00A0A19C /* Location.swift in Sources */,
+				AC3636DD2AFBA70400A0A19C /* CharacterResponse.swift in Sources */,
+				AC3636E72AFBA79400A0A19C /* CharacterListView.swift in Sources */,
+				AC3636E42AFBA77000A0A19C /* CharacterListViewModel.swift in Sources */,
+				AC3636DF2AFBA71800A0A19C /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

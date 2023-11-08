@@ -11,7 +11,7 @@ import SwiftUI
 struct RickAndMortyWithAppIntentsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharacterListView(viewModel: CharacterListViewModel(service: Service()))
         }
     }
 }
