@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Character
 
-public struct Character: Identifiable, Codable {
+public struct Character: Identifiable, Codable, Sendable {
     // MARK: - Properties
     
     public let id: Int

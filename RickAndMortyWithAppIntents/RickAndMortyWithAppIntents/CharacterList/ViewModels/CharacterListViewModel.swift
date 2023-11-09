@@ -38,8 +38,8 @@ final class CharacterListViewModel: ObservableObject {
     }
     
     private func getCharacterName(name: String) {
-        service.getCharacterByName(characterName: name) { characters in
-            self.characters = characters
+        Task {
+            self.characters = await service.getCharacterByName(characterName: name)
         }
     }
 }

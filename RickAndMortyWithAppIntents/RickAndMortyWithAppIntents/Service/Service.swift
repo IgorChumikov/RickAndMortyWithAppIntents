@@ -10,7 +10,7 @@ import Combine
 
 // MARK: - Service
 
-final class Service {
+final class Service: Sendable {
     // Создайте базовый URL
     let baseURL = "https://rickandmortyapi.com/api/character"
     
@@ -22,33 +22,18 @@ final class Service {
         return response?.results ?? []
     }
     
-    func getCharacterByName(characterName: String, completion: @escaping ([Character]) -> Void) {
-        // Добавьте параметр фильтрации по имени к базовому URL
-        let urlString = "\(baseURL)?name=\(characterName)"
-        
-        if let url = URL(string: urlString) {
-            // Ваш URL готов к использованию
-            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                if let error = error {
-                    print("Ошибка при выполнении запроса: \(error)")
-                    completion([])
-                } else if let data = data {
-                    do {
-                        let response = try JSONDecoder().decode(CharacterResponse.self, from: data)
-                        // Ваш ответ теперь в типизированной структуре CharacterResponse
-                        let characters = response.results
-                        // Здесь вы можете использовать characters для дальнейшей обработки
-                        completion(characters)
-                    } catch {
-                        print("Ошибка при разборе JSON: \(error)")
-                        completion([])
-                    }
-                }
-            }
-            
-            task.resume()
-        } else {
-            completion([])
-        }
-    }
+    func getCharacterByName(characterName: String) async -> [Character] {
+         let urlString = "\(baseURL)?name=\(characterName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"
+         
+         guard let url = URL(string: urlString) else { return [] }
+         
+         do {
+             let (data, _) = try await URLSession.shared.data(from: url)
+             let response = try JSONDecoder().decode(CharacterResponse.self, from: data)
+             return response.results
+         } catch {
+             print("Ошибка при выполнении запроса или разборе JSON: \(error)")
+             return []
+         }
+     }
 }
