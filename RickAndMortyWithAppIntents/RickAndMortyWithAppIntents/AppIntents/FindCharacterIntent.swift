@@ -33,8 +33,16 @@ struct FindCharacterIntent: AppIntent {
 struct ShortcutsProvider: AppShortcutsProvider {
     
     static var appShortcuts: [AppShortcut] {
+        // Shortcut
         AppShortcut(intent: FindCharacterIntent(), phrases: [
             "Сири, найди персонажа \(.applicationName) в приложении Рик и Морти"
+        ],
+                    shortTitle: "Найти персонажа",
+                    systemImageName: "person.fill.viewfinder"
+        )
+        // Siri
+        AppShortcut(intent: FindCharacterIntent(), phrases: [
+            "Найди персонажа \(\.$characterName) в приложении  \(.applicationName)"
         ],
                     shortTitle: "Найти персонажа",
                     systemImageName: "person.fill.viewfinder"
