@@ -2,10 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSSiriUsageDescription</key>
+	<string>Это приложение использует Siri для поиска персонажей в Рик и Морти, чтобы вы могли использовать голосовые команды для взаимодействия с приложением.</string>
+	<key>Siri</key>
+	<string></string>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>$(PRODUCT_BUNDLE_IDENTIFIER).openAppIntent</string>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).findCharacterIntent</string>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).openAppIntent</string>
 	</array>
 </dict>
 </plist>
