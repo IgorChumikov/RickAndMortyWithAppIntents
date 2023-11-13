@@ -16,7 +16,9 @@
 		AC3636E42AFBA77000A0A19C /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */; };
 		AC3636E72AFBA79400A0A19C /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E62AFBA79400A0A19C /* CharacterListView.swift */; };
 		AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E92AFBA7B800A0A19C /* Service.swift */; };
-		AC3636ED2AFBA9BD00A0A19C /* FindCharacterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636EC2AFBA9BD00A0A19C /* FindCharacterIntent.swift */; };
+		AC8DF8F02B022B96005E47C3 /* OpenAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */; };
+		AC8DF8F22B022BC0005E47C3 /* FindCharacterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F12B022BC0005E47C3 /* FindCharacterIntent.swift */; };
+		AC8DF8F42B022BE9005E47C3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +32,11 @@
 		AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		AC3636E62AFBA79400A0A19C /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		AC3636E92AFBA7B800A0A19C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		AC3636EC2AFBA9BD00A0A19C /* FindCharacterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCharacterIntent.swift; sourceTree = "<group>"; };
+		AC8DF8EB2B02258B005E47C3 /* RickAndMortyWithAppIntentsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RickAndMortyWithAppIntentsRelease.entitlements; sourceTree = "<group>"; };
+		AC8DF8EC2B022642005E47C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppIntent.swift; sourceTree = "<group>"; };
+		AC8DF8F12B022BC0005E47C3 /* FindCharacterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCharacterIntent.swift; sourceTree = "<group>"; };
+		AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		AC3636CB2AFBA68900A0A19C /* RickAndMortyWithAppIntents */ = {
 			isa = PBXGroup;
 			children = (
+				AC8DF8EC2B022642005E47C3 /* Info.plist */,
+				AC8DF8EB2B02258B005E47C3 /* RickAndMortyWithAppIntentsRelease.entitlements */,
 				AC3636EB2AFBA9B400A0A19C /* AppIntents */,
 				AC3636E82AFBA7AF00A0A19C /* Service */,
 				AC3636DA2AFBA6F000A0A19C /* CharacterList */,
@@ -128,9 +136,19 @@
 		AC3636EB2AFBA9B400A0A19C /* AppIntents */ = {
 			isa = PBXGroup;
 			children = (
-				AC3636EC2AFBA9BD00A0A19C /* FindCharacterIntent.swift */,
+				AC8DF8ED2B022B7E005E47C3 /* Intent */,
+				AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */,
 			);
 			path = AppIntents;
+			sourceTree = "<group>";
+		};
+		AC8DF8ED2B022B7E005E47C3 /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */,
+				AC8DF8F12B022BC0005E47C3 /* FindCharacterIntent.swift */,
+			);
+			path = Intent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +223,11 @@
 			files = (
 				AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */,
 				AC3636CD2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift in Sources */,
+				AC8DF8F22B022BC0005E47C3 /* FindCharacterIntent.swift in Sources */,
 				AC3636E12AFBA72E00A0A19C /* Location.swift in Sources */,
+				AC8DF8F42B022BE9005E47C3 /* ShortcutsProvider.swift in Sources */,
 				AC3636DD2AFBA70400A0A19C /* CharacterResponse.swift in Sources */,
-				AC3636ED2AFBA9BD00A0A19C /* FindCharacterIntent.swift in Sources */,
+				AC8DF8F02B022B96005E47C3 /* OpenAppIntent.swift in Sources */,
 				AC3636E72AFBA79400A0A19C /* CharacterListView.swift in Sources */,
 				AC3636E42AFBA77000A0A19C /* CharacterListViewModel.swift in Sources */,
 				AC3636DF2AFBA71800A0A19C /* Character.swift in Sources */,
@@ -347,6 +367,7 @@
 				DEVELOPMENT_TEAM = T4VS95R2ET;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RickAndMortyWithAppIntents/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -370,12 +391,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RickAndMortyWithAppIntents/RickAndMortyWithAppIntentsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RickAndMortyWithAppIntents/Preview Content\"";
 				DEVELOPMENT_TEAM = T4VS95R2ET;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RickAndMortyWithAppIntents/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
