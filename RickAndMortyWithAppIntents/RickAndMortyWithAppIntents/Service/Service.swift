@@ -23,17 +23,17 @@ final class Service: Sendable {
     }
     
     func getCharactersAsync() async -> [Character] {
-         guard let url = URL(string: "Your API Endpoint") else { return [] }
-         
-         do {
-             let (data, _) = try await URLSession.shared.data(from: url)
-             let response = try JSONDecoder().decode(CharacterResponse.self, from: data)
-             return response.results
-         } catch {
-             print(error)
-             return []
-         }
-     }
+        guard let url = URL(string: baseURL) else { return [] }
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let response = try JSONDecoder().decode(CharacterResponse.self, from: data)
+            return response.results
+        } catch {
+            print(error)
+            return []
+        }
+    }
     
     func getCharacterByName(characterName: String) async -> [Character] {
          let urlString = "\(baseURL)?name=\(characterName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"

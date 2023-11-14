@@ -17,7 +17,7 @@
 		AC3636E72AFBA79400A0A19C /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E62AFBA79400A0A19C /* CharacterListView.swift */; };
 		AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E92AFBA7B800A0A19C /* Service.swift */; };
 		AC8DF8F02B022B96005E47C3 /* OpenAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */; };
-		AC8DF8F22B022BC0005E47C3 /* FindCharacterIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F12B022BC0005E47C3 /* FindCharacterIntent.swift */; };
+		AC8DF8F22B022BC0005E47C3 /* DialogIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F12B022BC0005E47C3 /* DialogIntent.swift */; };
 		AC8DF8F42B022BE9005E47C3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		AC8DF8EB2B02258B005E47C3 /* RickAndMortyWithAppIntentsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RickAndMortyWithAppIntentsRelease.entitlements; sourceTree = "<group>"; };
 		AC8DF8EC2B022642005E47C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppIntent.swift; sourceTree = "<group>"; };
-		AC8DF8F12B022BC0005E47C3 /* FindCharacterIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCharacterIntent.swift; sourceTree = "<group>"; };
+		AC8DF8F12B022BC0005E47C3 /* DialogIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogIntent.swift; sourceTree = "<group>"; };
 		AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */,
-				AC8DF8F12B022BC0005E47C3 /* FindCharacterIntent.swift */,
+				AC8DF8F12B022BC0005E47C3 /* DialogIntent.swift */,
 			);
 			path = Intent;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			files = (
 				AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */,
 				AC3636CD2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift in Sources */,
-				AC8DF8F22B022BC0005E47C3 /* FindCharacterIntent.swift in Sources */,
+				AC8DF8F22B022BC0005E47C3 /* DialogIntent.swift in Sources */,
 				AC3636E12AFBA72E00A0A19C /* Location.swift in Sources */,
 				AC8DF8F42B022BE9005E47C3 /* ShortcutsProvider.swift in Sources */,
 				AC3636DD2AFBA70400A0A19C /* CharacterResponse.swift in Sources */,
