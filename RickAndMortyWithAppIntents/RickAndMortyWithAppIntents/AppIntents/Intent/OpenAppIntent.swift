@@ -16,3 +16,6 @@ struct OpenAppIntent: AppIntent {
         return .result(dialog: "Opening Rick and Morty...")
     }
 }
+
+
+// IntentResult: Возвращает простой результат, который может быть строкой или числом, без какого-либо дополнительного диалога.

@@ -23,9 +23,12 @@ struct ShortcutsProvider: AppShortcutsProvider {
         
         // Выводит числа с низу экрана
         AppShortcut(intent: DialogIntent(), phrases: [
-            "Hey Siri, show numbers in \(.applicationName)"
+            "Hey Siri, show message in \(.applicationName)"
         ],
         shortTitle: "Show Numbers",
-        systemImageName: "number")
+        systemImageName: "number"
+        )
+        
+        
     }
 }
