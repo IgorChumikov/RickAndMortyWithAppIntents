@@ -16,9 +16,12 @@
 		AC3636E42AFBA77000A0A19C /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */; };
 		AC3636E72AFBA79400A0A19C /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E62AFBA79400A0A19C /* CharacterListView.swift */; };
 		AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3636E92AFBA7B800A0A19C /* Service.swift */; };
+		AC48B18B2B0642A100537CA1 /* Intent_dialogAndSnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48B18A2B0642A100537CA1 /* Intent_dialogAndSnippetView.swift */; };
 		AC8DF8F02B022B96005E47C3 /* OpenAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */; };
 		AC8DF8F22B022BC0005E47C3 /* DialogIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F12B022BC0005E47C3 /* DialogIntent.swift */; };
 		AC8DF8F42B022BE9005E47C3 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */; };
+		ACE0CF032B0623F6000234D5 /* DisplayTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0CF022B0623F6000234D5 /* DisplayTextView.swift */; };
+		ACE0CF052B0628BA000234D5 /* DisplayTextIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0CF042B0628BA000234D5 /* DisplayTextIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +35,14 @@
 		AC3636E32AFBA77000A0A19C /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		AC3636E62AFBA79400A0A19C /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		AC3636E92AFBA7B800A0A19C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AC48B18A2B0642A100537CA1 /* Intent_dialogAndSnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intent_dialogAndSnippetView.swift; sourceTree = "<group>"; };
 		AC8DF8EB2B02258B005E47C3 /* RickAndMortyWithAppIntentsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RickAndMortyWithAppIntentsRelease.entitlements; sourceTree = "<group>"; };
 		AC8DF8EC2B022642005E47C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppIntent.swift; sourceTree = "<group>"; };
 		AC8DF8F12B022BC0005E47C3 /* DialogIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogIntent.swift; sourceTree = "<group>"; };
 		AC8DF8F32B022BE9005E47C3 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
+		ACE0CF022B0623F6000234D5 /* DisplayTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextView.swift; sourceTree = "<group>"; };
+		ACE0CF042B0628BA000234D5 /* DisplayTextIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		AC3636CB2AFBA68900A0A19C /* RickAndMortyWithAppIntents */ = {
 			isa = PBXGroup;
 			children = (
+				ACE0CF012B0623CD000234D5 /* DisplayText */,
 				AC8DF8EC2B022642005E47C3 /* Info.plist */,
 				AC8DF8EB2B02258B005E47C3 /* RickAndMortyWithAppIntentsRelease.entitlements */,
 				AC3636EB2AFBA9B400A0A19C /* AppIntents */,
@@ -147,8 +154,18 @@
 			children = (
 				AC8DF8EF2B022B96005E47C3 /* OpenAppIntent.swift */,
 				AC8DF8F12B022BC0005E47C3 /* DialogIntent.swift */,
+				AC48B18A2B0642A100537CA1 /* Intent_dialogAndSnippetView.swift */,
+				ACE0CF042B0628BA000234D5 /* DisplayTextIntent.swift */,
 			);
 			path = Intent;
+			sourceTree = "<group>";
+		};
+		ACE0CF012B0623CD000234D5 /* DisplayText */ = {
+			isa = PBXGroup;
+			children = (
+				ACE0CF022B0623F6000234D5 /* DisplayTextView.swift */,
+			);
+			path = DisplayText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,10 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC48B18B2B0642A100537CA1 /* Intent_dialogAndSnippetView.swift in Sources */,
 				AC3636EA2AFBA7B800A0A19C /* Service.swift in Sources */,
 				AC3636CD2AFBA68900A0A19C /* RickAndMortyWithAppIntentsApp.swift in Sources */,
 				AC8DF8F22B022BC0005E47C3 /* DialogIntent.swift in Sources */,
+				ACE0CF052B0628BA000234D5 /* DisplayTextIntent.swift in Sources */,
 				AC3636E12AFBA72E00A0A19C /* Location.swift in Sources */,
+				ACE0CF032B0623F6000234D5 /* DisplayTextView.swift in Sources */,
 				AC8DF8F42B022BE9005E47C3 /* ShortcutsProvider.swift in Sources */,
 				AC3636DD2AFBA70400A0A19C /* CharacterResponse.swift in Sources */,
 				AC8DF8F02B022B96005E47C3 /* OpenAppIntent.swift in Sources */,

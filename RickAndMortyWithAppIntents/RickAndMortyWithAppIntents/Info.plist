@@ -8,6 +8,7 @@
 	<string></string>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).displayTextIntent</string>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).dialogIntent</string>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).openAppIntent</string>
 	</array>

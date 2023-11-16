@@ -29,6 +29,24 @@ struct ShortcutsProvider: AppShortcutsProvider {
         systemImageName: "number"
         )
         
+        /*
+        Второй интент Intent_dialogAndSnippetView при выполнении возвращает диалог и представление с некоторым текстом.
+        Этот интент настроен так, чтобы не открывать приложение при его запуске.
+         */
+        AppShortcut(intent: Intent_dialogAndSnippetView(), phrases: [
+            "\(.applicationName) dialogAndSnippetView"
+        ],
+        shortTitle: "DisplayTextIntent",
+        systemImageName: "DisplayTextIntent"
+        )
+        
+        
+        AppShortcut(intent: DisplayTextIntent(), phrases: [
+            "\(.applicationName) DisplayTextIntent"
+        ],
+        shortTitle: "DisplayTextIntent",
+        systemImageName: "DisplayTextIntent"
+        )
         
     }
 }
